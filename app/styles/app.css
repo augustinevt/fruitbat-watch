@@ -1,0 +1,18 @@
+body {
+
+}
+
+.announcement-alert {
+  display: inline-block;
+
+  text-align: center;
+  width: 40vw;
+  margin:auto;
+  border-radius: 20px;
+  background-color: rgba(255, 100, 100, 0.3)
+}
+.announcement-wrapper {
+
+  text-align: center;
+
+}
