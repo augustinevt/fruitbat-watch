@@ -1,0 +1,8 @@
+<h1>Hello!!</h1>
+{{#if newAnnouncement}}
+  {{input value=body}}
+  {{input value=priority type="number" min=1 max=10}}
+  <button {{action 'save1'}}>add announcement</button>
+{{else}}
+    <button {{action 'announcementShowForm'}}>New Announcement</button>
+{{/if}}

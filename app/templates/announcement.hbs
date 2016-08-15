@@ -1,0 +1,9 @@
+<h1>Announcing:</h1>
+
+{{#each model as |announcement|}}
+  <h4> {{announcement.body}} {{announcement.priority}}  <button {{action 'delete' announcement}}>Delete</button></h4>
+{{/each}}
+
+{{new-announcement save2='saveAnnouncement'}}
+
+{{#link-to 'index'}} Home {{/link-to}}
