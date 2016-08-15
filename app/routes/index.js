@@ -5,10 +5,9 @@ export default Ember.Route.extend({
 
     return Ember.RSVP.hash({
       rentals: this.store.findAll('rental'),
-      announcements: this.store.query('announcement', {orderBy: 'priority', equalTo: 1})
+      announcements: this.store.query('announcement', {orderBy: 'priority', endAt: 3})
     });
   },
-
   actions: {
     save3(params) {
       var newRental = this.store.createRecord('rental', params);
